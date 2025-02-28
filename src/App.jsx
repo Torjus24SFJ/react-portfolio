@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Layout>
-      <main className="p-40">
+      <main className="md:p-24 sm:p-12 p-8 grid gap-30">
         <HeaderText />
         <About />
         <Projects />

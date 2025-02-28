@@ -1,8 +1,8 @@
 export function About() {
     return (
         <>
-        <section id="about" className="flex flex-col ml-60">
-        <div className="flex items-baseline mt-30">
+        <section id="about" className="flex flex-col items-end">
+        <div className="flex items-baseline">
           <h2 className="text-white text-4xl font-semibold font-inter mb-[5px] line-clamp-1">
             About
           </h2>
