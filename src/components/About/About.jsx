@@ -1,14 +1,14 @@
+import { Heading } from "../Heading/Heading";
+
 export function About() {
-    return (
-        <>
-        <section id="about" className="flex flex-col items-end">
-        <div className="flex w-full items-baseline">
-          <h2 className="text-white text-4xl font-semibold font-inter mb-[5px]">
+  return (
+    <>
+      <section id="about" className="flex flex-col items-end">
+        <Heading alignment="left">
+          <h2>
             About
           </h2>
-          <span className="w-[10px] h-[10px] bg-[#63f1e5] rounded-full ml-1 mb-0.5"/>
-          <hr className="bg-[#3f3f46] w-[90%] h-[2px] opacity-55" />
-        </div>
+        </Heading>
         <div className="flex items-start gap-2 mt-[15px]">
           <span className="w-10 h-10 p-5 bg-[#63f1e5] rounded-[5px] flex justify-center items-center">
             <p className="text-white text-[30px] font-bold font-inter leading-none">
@@ -36,7 +36,9 @@ export function About() {
                 <span className="text-[#f1f1f1] font-semibold">Typescript</span>
               </div>
               <div className="w-30 h-10 bg-[#3f3f46] flex justify-center items-center rounded-[5px]">
-                <span className="text-[#f1f1f1] font-semibold">Tailwindcss</span>
+                <span className="text-[#f1f1f1] font-semibold">
+                  Tailwindcss
+                </span>
               </div>
               <div className="w-30 h-10 bg-[#3f3f46] flex justify-center items-center rounded-[5px]">
                 <span className="text-[#f1f1f1] font-semibold">React</span>
@@ -57,6 +59,6 @@ export function About() {
           </div>
         </div>
       </section>
-        </>
-    )
+    </>
+  );
 }

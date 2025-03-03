@@ -1,5 +1,4 @@
 import { Navbar } from "../Navbar/Navbar";
-import PropTypes from "prop-types";
 
 export function Layout({ children }) {
   return (
@@ -9,6 +8,4 @@ export function Layout({ children }) {
     </div>
   );
 }
-Layout.propTypes = {
-  children: PropTypes.node.isRequired, // Ensures 'children' is provided
-};
+
