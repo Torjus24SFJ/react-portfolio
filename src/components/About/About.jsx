@@ -48,10 +48,10 @@ export function About() {
                 <span className="text-[#f1f1f1] font-semibold">Github</span>
               </div>
               <div className="w-30 h-10 bg-[#3f3f46] flex justify-center items-center rounded-[5px]">
-                <span className="text-[#f1f1f1] font-semibold">Something</span>
+                <span className="text-[#f1f1f1] font-semibold">Photoshop</span>
               </div>
               <div className="w-30 h-10 bg-[#3f3f46] flex justify-center items-center rounded-[5px]">
-                <span className="text-[#f1f1f1] font-semibold">Something</span>
+                <span className="text-[#f1f1f1] font-semibold">Figma</span>
               </div>
             </div>
           </div>
