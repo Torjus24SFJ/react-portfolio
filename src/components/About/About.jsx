@@ -1,63 +1,53 @@
 import { Heading } from "../Heading/Heading";
 
 export function About() {
+
+  const tools = [
+    "CSS",
+    "JavaScript",
+    "TailwindCSS",
+    "React",
+    "NextJS",
+    "GitHub",
+    "Photoshop",
+    "Figma",
+  ];
+  
+  const ToolGrid = () => {
+    return (
+      <div className="grid grid-cols-3 h-5 gap-1 ml-[25px]">
+        {tools.map((tool) => (
+          <div key={tool} className="w-30 h-10 bg-[#3f3f46] flex justify-center items-center rounded-[5px]">
+            <span className="text-[#f1f1f1] font-semibold">{tool}</span>
+          </div>
+        ))}
+      </div>
+    );
+  };
+   
   return (
     <>
       <section id="about" className="flex flex-col items-end">
         <Heading alignment="left">
-          <h2>
-            About
-          </h2>
+          <h2>About</h2>
         </Heading>
         <div className="flex items-start gap-2 mt-[15px]">
-          <span className="w-10 h-10 p-5 bg-[#63f1e5] rounded-[5px] flex justify-center items-center">
-            <p className="text-white text-[30px] font-bold font-inter leading-none">
-              L
-            </p>
-          </span>
           <div className="grid grid-cols-2">
-            <article className="text-[#f1f1f1] font-semibold w-100">
-              orem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              optio, fuga officia quia cumque molestiae nostrum velit neque
-              itaque dolorum sapiente eligendi unde adipisci sit, amet aliquam
-              debitis porro accusantium? Porro facilis exercitationem ex nemo
-              consequatur consequuntur voluptates laboriosam dolor quia? Quos
-              temporibus eius atque possimus totam quasi, est animi, nesciunt
-              repudiandae ut sint ex, repellendus enim reprehenderit. Non, amet.
+            <article className="text-[#aeaeae] font-medium w-100">
+              I&#39;m passionate about creating websites that not only look
+              great but also feel great to use. I enjoy designing in Figma,
+              planning out how everything should function, and then bringing it
+              to life through code. I take inspiration from other developers but
+              always aim to put my own spin on it, experimenting to find what
+              works best. For me, a great website is more than just visuals—it
+              should be smooth, intuitive, and satisfying to interact with. I
+              focus on the details, from snappy animations to thoughtful UI
+              elements, ensuring that every part of the experience feels
+              intentional.
             </article>
-            <div className="grid grid-cols-3 h-5 gap-1 ml-[25px]">
-              <div className="w-30 h-10 bg-[#3f3f46] flex justify-center items-center rounded-[5px]">
-                <span className="text-[#f1f1f1] font-semibold">CSS</span>
-              </div>
-              <div className="w-30 h-10 bg-[#3f3f46] flex justify-center items-center rounded-[5px]">
-                <span className="text-[#f1f1f1] font-semibold">Javascript</span>
-              </div>
-              <div className="w-30 h-10 bg-[#3f3f46] flex justify-center items-center rounded-[5px]">
-                <span className="text-[#f1f1f1] font-semibold">Typescript</span>
-              </div>
-              <div className="w-30 h-10 bg-[#3f3f46] flex justify-center items-center rounded-[5px]">
-                <span className="text-[#f1f1f1] font-semibold">
-                  Tailwindcss
-                </span>
-              </div>
-              <div className="w-30 h-10 bg-[#3f3f46] flex justify-center items-center rounded-[5px]">
-                <span className="text-[#f1f1f1] font-semibold">React</span>
-              </div>
-              <div className="w-30 h-10 bg-[#3f3f46] flex justify-center items-center rounded-[5px]">
-                <span className="text-[#f1f1f1] font-semibold">NextJS</span>
-              </div>
-              <div className="w-30 h-10 bg-[#3f3f46] flex justify-center items-center rounded-[5px]">
-                <span className="text-[#f1f1f1] font-semibold">Github</span>
-              </div>
-              <div className="w-30 h-10 bg-[#3f3f46] flex justify-center items-center rounded-[5px]">
-                <span className="text-[#f1f1f1] font-semibold">Photoshop</span>
-              </div>
-              <div className="w-30 h-10 bg-[#3f3f46] flex justify-center items-center rounded-[5px]">
-                <span className="text-[#f1f1f1] font-semibold">Figma</span>
-              </div>
+            <ToolGrid />
             </div>
           </div>
-        </div>
       </section>
     </>
   );
