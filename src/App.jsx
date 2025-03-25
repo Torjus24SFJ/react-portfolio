@@ -9,8 +9,10 @@ function App() {
   return (
     <>
       <Layout>
-      <main className="md:p-24 sm:p-12 p-8 grid gap-30">
+      <main className=" md:p-24 sm:p-12 grid grid-cols-1 gap-20">
+        <div className="lg:ml-60">
         <HeaderText />
+        </div>
         <About />
         <Projects />
         <Experience />

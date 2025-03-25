@@ -3,7 +3,7 @@ import { GridAnimate } from "../GridAnimate/GridAnimate";
 export function HeaderText() {
   return (
     <>
-      <section id="head" className="flex flex-col ml-60">
+      <section>
         <div className="flex flex-col gap-2">
           <div className="flex flex-row items-baseline">
             <h2 className="text-white text-5xl font-semibold font-inter mb-[5px] line-clamp-1">
