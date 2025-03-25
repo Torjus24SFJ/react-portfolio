@@ -9,7 +9,7 @@ export function Projects() {
     },
     {
       name: "Marketplace",
-      img: "/assets/Screenshot 2025-03-25 085827.png",
+      img: "/assets/marketplace.png",
       link: "https://marketplace-plum-delta.vercel.app/",
     },
   ];

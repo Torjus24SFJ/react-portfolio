@@ -33,7 +33,7 @@ export function About() {
         </Heading>
         <div className="flex items-start gap-2 mt-[15px]">
           <div className="grid grid-cols-2">
-            <article className="text-[#aeaeae] font-medium w-100">
+            {/* <article className="text-[#aeaeae] font-medium w-100">
               I&#39;m passionate about creating websites that not only look
               great but also feel great to use. I enjoy designing in Figma,
               planning out how everything should function, and then bringing it
@@ -44,7 +44,7 @@ export function About() {
               focus on the details, from snappy animations to thoughtful UI
               elements, ensuring that every part of the experience feels
               intentional.
-            </article>
+            </article> */}
             <ToolGrid />
             </div>
           </div>
